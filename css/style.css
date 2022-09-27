@@ -28,6 +28,10 @@ body {
     background-color: var(--dark-grey);
 }
 
+.my-border-bg-green{
+    color: var(--green);
+}
+
 /* ! MAIN */
 #hero {
     padding-top: 100px;
@@ -37,7 +41,6 @@ img .avatar {
     width: 70%;
     max-width: 100%;
 }
-
 /* ! HEADER */
 header {
     background-color: var(--black);
