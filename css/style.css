@@ -28,8 +28,10 @@ body {
     background-color: var(--dark-grey);
 }
 
-.my-border-bg-green{
-    color: var(--green);
+.my-border-{
+    background-color: var(--green);
+    border: 1px solid var(--white);
+    padding: 6px 14px;
 }
 
 /* ! MAIN */
