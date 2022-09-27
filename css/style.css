@@ -19,6 +19,9 @@ body {
 .bg-green{
     background-color: var(--green);
 }
+.text-green{
+    color: var(--green);
+}
 
 .bg-grey{
     background-color: var(--grey);
@@ -51,3 +54,9 @@ header {
     top: 0;
     width: 100%;
 }
+
+/* FOOTER  */
+    /* .circle-social{ 
+        border: 1px solid white;
+        
+} */
