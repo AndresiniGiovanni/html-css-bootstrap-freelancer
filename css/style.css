@@ -46,6 +46,27 @@ img .avatar {
     width: 70%;
     max-width: 100%;
 }
+.star:before , .star:after{
+    content: "";
+    display: block;
+    background-color: var(--white);
+    height: 3px;
+    width: 40%;
+}
+.star{
+    width: 250px;
+    display: flex;
+}
+.fa-solid.fa-star{
+    margin-right: 20px;
+    font-size: 20px;
+}
+.star .fa-solid.fa-star{
+    width: 20%;
+}
+#portfolio .star:before , #portfolio .star:after{
+    background-color: var(--black);
+}
 /* ! HEADER */
 header {
     background-color: var(--black);
@@ -54,3 +75,4 @@ header {
     top: 0;
     width: 100%;
 }
+

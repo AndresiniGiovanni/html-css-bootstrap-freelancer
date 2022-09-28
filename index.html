@@ -65,11 +65,18 @@
     <main>
       <section id="hero" class="bg-green">
         <div class="container-md">
-          <div class="row justify-content-center">
+          <div class="row justify-content-center pb-5">
             <div class="col-auto text-center">
-              <img src="img/avatar.svg" alt="avatar" class="avatar" />
-              <h1 class="text-uppercase">Start Bootstrap</h1>
-              <div></div>
+              <img src="img/avatar.svg" alt="avatar" class="avatar pb-4" />
+              <h1 class="text-uppercase text-white">Start Bootstrap</h1>
+              <div class="star d-flex align-items-center justify-content-between m-auto pb-3 text-white ">
+                <i class="fa-solid fa-star px-4"></i>
+              </div>
+              <span class="text-uppercase text-white">graphic artist</span>
+              <span class="text-white">-</span>
+              <span class="text-uppercase text-white">web designer</span>
+              <span class="text-white">-</span>
+              <span class="text-uppercase text-white ">illustrator</span>
             </div>
           </div>
         </div>
@@ -77,9 +84,12 @@
 
       <!--  PORTFOLIO  -->
       <section id="portfolio" class="overflow-hidden">
-        <h3 class="container-md text-center text-uppercase mt-5 mb-5">
+        <h3 class="container-md text-center text-uppercase mt-5 mb-3">
           portfolio
         </h3>
+        <div class="star d-flex align-items-center justify-content-between m-auto pb-3  ">
+          <i class="fa-solid fa-star px-4"></i>
+        </div>
         <div
           class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4 justify-content-center px-4"
         >
@@ -126,7 +136,8 @@
         <h3 class="container-md text-center text-uppercase text-white pt-5">
           about
         </h3>
-        <div class="d-flex justify-content-center">
+        <div class="container">
+        <div class="d-flex justify-content-center mio-cont">
           <p class="text-white">
             Freelancer is a free bootstrap <br />
             theme created by Start Bootstrap. <br />
@@ -140,7 +151,7 @@
           </p>
         </div>
 
-        <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-center mio-cont">
           <p class="text-white">
             Whether you're a student looking <br />
             to showcase your work, a <br />
@@ -151,6 +162,7 @@
             point!
           </p>
         </div>
+      </div>
 
         <div class="d-flex justify-content-center pb-4">
           <button class="my-border- rounded-2">
@@ -164,15 +176,37 @@
       <!--  CONTACT  -->
       <section id="contact" class="">
         <h3 class="container-md text-center text-uppercase pt-5">contact me</h3>
-        <div class="d-flex flex-column w-50 m-auto">
-          <div class="">Name</div>
-          <hr />
-          <div>Email Address</div>
-          <hr />
-          <div>Phone Number</div>
-          <br />
-          <div>Message</div>
+
+        <div class="star d-flex align-items-center justify-content-between m-auto pb-3  ">
+          <i class="fa-solid fa-star px-4"></i>
         </div>
+
+        <div class="d-flex flex-column w-50 m-auto">
+          <form>
+            <div class="form-group">         
+              <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+            </div>
+          </form>
+          <hr />
+          <form>
+            <div class="form-group">
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email Address">
+            </div>
+          </form>
+          <hr />
+          <form>
+            <div class="form-group">              
+              <input type="phone" class="form-control" id="exampleFormControlInput1" placeholder="Phone Number">
+            </div>
+          </form>
+          <hr />
+          <form>
+            <div>
+              <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="3"></textarea>
+            </div>
+          </form>
+        </div>
+
         <div class="w-50 m-auto mt-5">
           <hr />
           <div class="pb-4">
