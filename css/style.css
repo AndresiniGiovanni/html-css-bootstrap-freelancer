@@ -1,78 +1,120 @@
 :root {
-    --black: rgba(44, 62, 80, 1);
-    --green: rgba(26, 188, 156, 1);
-    --white: rgba(255, 255, 255, 1);
-    --grey: rgba(58, 84, 109, 1);
-    --dark-grey: rgba(44, 62, 80, 1);
+  --black: rgba(44, 62, 80, 1);
+  --green: rgba(26, 188, 156, 1);
+  --white: rgba(255, 255, 255, 1);
+  --grey: rgba(58, 84, 109, 1);
+  --dark-grey: rgba(44, 62, 80, 1);
 }
 
 /* ! COMMON */
 body {
-    background-color: var(--white);
-    color: var(--black);
+  background-color: var(--white);
+  color: var(--black);
 }
 
-.my-bg-black{
-    background-color: var(--black);
+.my-bg-black {
+  background-color: var(--black);
 }
 
-.bg-green{
-    background-color: var(--green);
+.bg-green {
+  background-color: var(--green);
 }
-.text-green{
-    color: var(--green);
-}
-
-.bg-grey{
-    background-color: var(--grey);
+.text-green {
+  color: var(--green);
 }
 
-.bg-dark-grey{
-    background-color: var(--dark-grey);
+.bg-grey {
+  background-color: var(--grey);
 }
 
-.my-border-{
-    background-color: var(--green);
-    border: 1px solid var(--white);
-    padding: 6px 14px;
+.bg-dark-grey {
+  background-color: var(--dark-grey);
+}
+
+.my-border- {
+  background-color: var(--green);
+  border: 1px solid var(--white);
+  padding: 6px 14px;
 }
 
 /* ! MAIN */
 #hero {
-    padding-top: 100px;
+  padding-top: 100px;
 }
 
 img .avatar {
-    width: 70%;
-    max-width: 100%;
+  width: 70%;
+  max-width: 100%;
 }
-.star:before , .star:after{
-    content: "";
-    display: block;
-    background-color: var(--white);
-    height: 3px;
-    width: 40%;
+.star:before,
+.star:after {
+  content: "";
+  display: block;
+  background-color: var(--white);
+  height: 3px;
+  width: 40%;
 }
-.star{
-    width: 250px;
-    display: flex;
+.star {
+  width: 250px;
+  display: flex;
 }
-.fa-solid.fa-star{
-    margin-right: 20px;
-    font-size: 20px;
+.fa-solid.fa-star {
+  margin-right: 20px;
+  font-size: 20px;
 }
-.star .fa-solid.fa-star{
-    width: 20%;
+.star .fa-solid.fa-star {
+  width: 20%;
 }
-#portfolio .star:before , #portfolio .star:after{
-    background-color: var(--black);
+#contact .star:before,
+#contact .star:after {
+  background-color: var(--black);
+}
+
+.layover-container {
+  cursor: pointer;
+}
+
+.layover-container::after {
+  content: "+";
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(26, 188, 156, 0.5);
+  font-size: 100px;
+  font-weight: 800;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.layover-container:hover:after {
+  opacity: 1;
+  display: flex;
 }
 /* ! HEADER */
 header {
-    background-color: var(--black);
-    position: fixed;
-    height: 90px;
-    top: 0;
-    width: 100%;
+  background-color: var(--black);
+  position: fixed;
+  height: 90px;
+  top: 0;
+  width: 100%;
+  z-index: 2000;
 }
 
+/* FOOTER  */
+.social-myicon{
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  margin: 0 10px;
+  border-radius: 50%;
+}
+
+.social-myicon > i {
+  margin-left: 11px;
+  margin-top: 10px;
+  font-size: 18px;
+  color: white;
+}
